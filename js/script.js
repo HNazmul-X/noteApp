@@ -1,4 +1,4 @@
-// const noteFormSubmitBtn = document.querySelector('selector');
+
 
 const getFormDetais = (event) => {
     const getInputValue = (seletor) => document.querySelector(seletor).value;
