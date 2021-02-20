@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$theme-color : #35baf6;
+
+.container {
+    width: 380px !important;
+}
+
+body {
+    background: radial-gradient(circle, #03a9f4, #35baf6);
+    height: 100vh;
+    font-family: 'Poppins',
+        sans-serif;
+}
+
+nav {
+
+    .navbar-brand,
+    .nav-link {
+        color: $theme-color !important;
+        font-weight: 900;
+    }
+}
+
+.form-area-box {
+    width: 350px;
+    margin: auto;
+    background: white;
+    margin-top: 100px;
+    border-radius: 10px;
+
+    .form-title {
+        h3 {
+            color: $theme-color;
+            font-weight: bolder;
+            padding: 10px;
+            text-align: center;
+        }
+    }
+
+    #note-form {
+
+        label,
+        input,
+        textarea {
+            color: #b6b6b6 !important;
+            resize: none;
+            &::placeholder{
+                color:#35b9f6c7;
+            }
+        }
+        
+
+        textarea {
+            height: 150px;
+        }
+
+        .btn {
+            background: $theme-color;
+            color: white;
+        }
+    }
+}
+
+.nav-link {
+    padding: 10px 20px !important;
+    font-size: 20px;
+    border-radius: 50%;
+
+    &:hover {
+        background: $theme-color;
+        color: white !important;
+    }
+}
+
+.to-do-card {
+    width: 95%;
+    background: white;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 20px;
+    color: #a0a0a0;
+    border-left: #03a8f4a4 5px solid;
+
+    .to-do-card-items {
+        padding-left: 20px;
+
+        hr {
+            margin: 3px 0px 10px 0px;
+            height: 3px;
+            color: #03a8f4a4;
+        }
+
+        h3 {
+            font-size: 20px;
+            margin: 0px;
+        }
+
+        p {
+            margin-bottom: 5px;
+            font-size: 14px;
+            line-height: 15px;
+        }
+
+        .date {
+            font-weight: bolder;
+        }
+    }
+}

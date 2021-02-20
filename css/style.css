@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.container {
+  width: 380px !important;
+}
+
+body {
+  background: radial-gradient(circle, #03a9f4, #35baf6);
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav .navbar-brand,
+nav .nav-link {
+  color: #35baf6 !important;
+  font-weight: 900;
+}
+
+.form-area-box {
+  width: 350px;
+  margin: auto;
+  background: white;
+  margin-top: 100px;
+  border-radius: 10px;
+}
+
+.form-area-box .form-title h3 {
+  color: #35baf6;
+  font-weight: bolder;
+  padding: 10px;
+  text-align: center;
+}
+
+.form-area-box #note-form label,
+.form-area-box #note-form input,
+.form-area-box #note-form textarea {
+  color: #b6b6b6 !important;
+  resize: none;
+}
+
+.form-area-box #note-form label::-webkit-input-placeholder,
+.form-area-box #note-form input::-webkit-input-placeholder,
+.form-area-box #note-form textarea::-webkit-input-placeholder {
+  color: #35b9f6c7;
+}
+
+.form-area-box #note-form label:-ms-input-placeholder,
+.form-area-box #note-form input:-ms-input-placeholder,
+.form-area-box #note-form textarea:-ms-input-placeholder {
+  color: #35b9f6c7;
+}
+
+.form-area-box #note-form label::-ms-input-placeholder,
+.form-area-box #note-form input::-ms-input-placeholder,
+.form-area-box #note-form textarea::-ms-input-placeholder {
+  color: #35b9f6c7;
+}
+
+.form-area-box #note-form label::placeholder,
+.form-area-box #note-form input::placeholder,
+.form-area-box #note-form textarea::placeholder {
+  color: #35b9f6c7;
+}
+
+.form-area-box #note-form textarea {
+  height: 150px;
+}
+
+.form-area-box #note-form .btn {
+  background: #35baf6;
+  color: white;
+}
+
+.nav-link {
+  padding: 10px 20px !important;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.nav-link:hover {
+  background: #35baf6;
+  color: white !important;
+}
+
+.to-do-card {
+  width: 95%;
+  background: white;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 20px;
+  color: #a0a0a0;
+  border-left: #03a8f4a4 5px solid;
+}
+
+.to-do-card .to-do-card-items {
+  padding-left: 20px;
+}
+
+.to-do-card .to-do-card-items hr {
+  margin: 3px 0px 10px 0px;
+  height: 3px;
+  color: #03a8f4a4;
+}
+
+.to-do-card .to-do-card-items h3 {
+  font-size: 20px;
+  margin: 0px;
+}
+
+.to-do-card .to-do-card-items p {
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 15px;
+}
+
+.to-do-card .to-do-card-items .date {
+  font-weight: bolder;
+}
+/*# sourceMappingURL=style.css.map */
