@@ -50,12 +50,20 @@ const showItemInUi = () => {
     note = JSON.parse(localStorage.getItem("note"));
     note.forEach((element) => {
         const div = document.createElement("div")
-        div.className = "to-do-card";
+        div.id = element.noteId;
+        div.classList = ["to-do-card"];
         div.innerHTML = `
             <div class="to-do-card-items">
-                <h3>${element.noteName}</h3>
+            <div class="edit-tools-box  d-none">
+                <i class="fas fa-search-plus"></i>
+                <i class="fas fa-pen-square"></i>
+                <i class="fas fa-trash-alt"></i>
+                <i class="fas fa-share-alt"></i>
+            </div>
+                <i class="fas fa-ellipsis-v menu-icon" onclick="getEditToolsBoxPosition('${element.noteId}')"></i>
+                <h3>${element.noteName.substr(0, 20)}....</h3>
                 <hr class="">
-                <p>${element.noteDetails}</p>
+                <p>${element.noteDetails.substr(0, 100)}....</p>
                 <p class="date">${element.noteSubmitTime.date}/${element.noteSubmitTime.month}/${element.noteSubmitTime.year}</p>
             </div>
         `;
@@ -63,3 +71,14 @@ const showItemInUi = () => {
     });
 };
 showItemInUi()
+
+
+const getEditToolsBoxPosition = (boxId) => {
+    const menuIcon = document.querySelector(`#${boxId} .menu-icon`);
+    const toolsBox = document.querySelector(`#${boxId} .edit-tools-box`);
+    console.log(boxId);
+    toolsBox.classList.toggle("d-none")
+    menuIcon.addEventListener("click", e => {
+    })
+}
+;

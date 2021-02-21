@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: siraji-manha;
+  src: url(../fonts/Li-Siraji_manha.ttf);
+}
+
 .container {
   width: 380px !important;
 }
@@ -6,7 +11,7 @@
 body {
   background: radial-gradient(circle, #03a9f4, #35baf6);
   height: 100vh;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif, siraji-manha;
 }
 
 nav .navbar-brand,
@@ -89,6 +94,7 @@ nav .nav-link {
   border-radius: 20px;
   color: #a0a0a0;
   border-left: #03a8f4a4 5px solid;
+  position: relative;
 }
 
 .to-do-card .to-do-card-items {
@@ -114,5 +120,58 @@ nav .nav-link {
 
 .to-do-card .to-do-card-items .date {
   font-weight: bolder;
+}
+
+.to-do-card .menu-icon {
+  position: absolute;
+  right: -7px;
+  padding: 15px;
+  background: #35baf6;
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding-top: 10px;
+  top: -10px;
+  cursor: pointer;
+}
+
+.to-do-card .menu-icon:active {
+  background: #03a9f4;
+}
+
+.to-do-card .edit-tools-box {
+  width: 200px;
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: absolute;
+  -webkit-box-shadow: 2px 2px 20px 5px #0000001e;
+          box-shadow: 2px 2px 20px 5px #0000001e;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  right: 5px;
+  z-index: 2;
+}
+
+.to-do-card .edit-tools-box i {
+  background: #35baf6;
+  padding: 10px;
+  color: white;
+  border-radius: 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.to-do-card .edit-tools-box i:active {
+  background: #03a9f4;
 }
 /*# sourceMappingURL=style.css.map */

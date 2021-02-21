@@ -1,16 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 $theme-color : #35baf6;
+$theme-color-2 : #03a9f4;
+
+@font-face{
+    font-family: siraji-manha;
+    src: url(../fonts/Li-Siraji_manha.ttf);
+}
 
 .container {
     width: 380px !important;
 }
 
 body {
-    background: radial-gradient(circle, #03a9f4, #35baf6);
+    background: radial-gradient(circle, $theme-color-2, $theme-color);
     height: 100vh;
     font-family: 'Poppins',
-        sans-serif;
+        sans-serif,
+        siraji-manha;
 }
 
 nav {
@@ -81,6 +88,7 @@ nav {
     border-radius: 20px;
     color: #a0a0a0;
     border-left: #03a8f4a4 5px solid;
+    position: relative;
 
     .to-do-card-items {
         padding-left: 20px;
@@ -106,4 +114,51 @@ nav {
             font-weight: bolder;
         }
     }
+    .menu-icon{
+        position: absolute;
+        right:-7px;
+        padding:15px;
+        background: $theme-color;
+        color:white;
+        width:35px;
+        height:35px;
+        border-radius:50%;
+        padding-top:10px;
+        top:-10px;
+        cursor: pointer;
+        &:active{
+            background: $theme-color-2;
+        }
+    }
+    .edit-tools-box {
+        width: 200px;
+        background: white;
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: absolute;
+        box-shadow: 2px 2px 20px 5px #0000001e;
+        transition: 0.5s;
+        right:5px;
+        z-index: 2;
+
+        i {
+            background: $theme-color;
+            padding: 10px;
+            color: white;
+            border-radius: 20px;
+            margin: 5px;
+            cursor: pointer;
+            &:active{
+                background:$theme-color-2;
+            }
+
+
+        }
+    }
 }
+
+
+
